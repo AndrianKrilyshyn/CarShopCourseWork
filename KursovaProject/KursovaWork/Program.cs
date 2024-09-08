@@ -33,7 +33,7 @@ builder.Services.Configure<GzipCompressionProviderOptions>(options =>
 
 builder.Services.AddDbContext<CarSaleContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("KursovaWorkContext"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DBContext"));
 });
 
 

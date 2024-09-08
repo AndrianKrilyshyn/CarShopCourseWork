@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KursovaWork.Infrastructure.Unit.Tests.Repositories;
 
-public class UserRepositoryTests
+public class UserRepositoryTests : IDisposable, IAsyncDisposable
 {
     private DbContextOptions<CarSaleContext> _dbContextOptions;
     private CarSaleContext _context;
