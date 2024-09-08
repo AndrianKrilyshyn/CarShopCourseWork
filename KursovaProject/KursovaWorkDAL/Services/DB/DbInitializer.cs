@@ -109,14 +109,6 @@ public static class DbInitializer
                 {
                     new CarImage()
                     {
-                        Url = "https://uzr.com.ua/wp-content/uploads/2018/08/Audi-Q8-8.jpg"
-                    },
-                    new CarImage()
-                    {
-                        Url = "https://cdn.car-recalls.eu/wp-content/uploads/2020/07/Audi-Q8-2020-automatic-gearbox-oil-leak.jpg"
-                    },
-                    new CarImage()
-                    {
                         Url = "https://pictures.dealer.com/a/audisanjuan1001eexpressway83aoa/0618/0112a064facce92a80125844c7371be2x.jpg"
                     }
                 }
@@ -165,14 +157,6 @@ public static class DbInitializer
                 },
                 Images = new List<CarImage>()
                 {
-                    new CarImage()
-                    {
-                        Url = "https://i.ytimg.com/vi/7IQCZxi7Mwk/maxresdefault.jpg"
-                    },
-                    new CarImage()
-                    {
-                        Url = "https://renty.ae/cdn-cgi/image/format=auto,fit=contain/https://renty.ae/uploads/car/photos/l/red_lamborghini-evo-spyder_2021_7856_abe1ff80b1f4cd65bf3347c209736e48.jpg"
-                    },
                     new CarImage()
                     {
                         Url = "https://www.topgear.com/sites/default/files/cars-car/image/2019/01/tom_5734.jpg?w=1280&h=720"
@@ -225,15 +209,7 @@ public static class DbInitializer
                 {
                     new CarImage()
                     {
-                        Url = "https://i.ytimg.com/vi/2RKG2HqRy8U/maxresdefault.jpg"
-                    },
-                    new CarImage()
-                    {
                         Url = "https://i.ytimg.com/vi/RWNpWW8MZUM/maxresdefault.jpg"
-                    },
-                    new CarImage()
-                    {
-                        Url = "https://i0.wp.com/namastecar.com/wp-content/uploads/2022/06/Lamborghini-Aventador-LP-780-4-Ultimae-Roadster-2022-video-review-specs-details-in-Hindi-1.jpeg?ssl=1"
                     }
                 }
             }
