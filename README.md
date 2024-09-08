@@ -53,7 +53,7 @@
 <div>
     <p>Patterns/Architecture that have been used in this project:</p>
     <ul>
-        <li>Three Layer Architecture</li>
+        <li>Clean Code Architecture</li>
         <li>Repository pattern</li>
         <li>MVC pattern</li>
     </ul>
