@@ -15,7 +15,7 @@ public class FutureMonthAttribute : ValidationAttribute
     /// <returns>Success or failure of the validation.</returns>
     protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
     {
-        if (value is not int month || !IsValidYear(validationContext, out var year) || !IsValidExpiration(month, year))
+        if (!int.TryParse(value as string, out var month) || !IsValidYear(validationContext, out var year) || !IsValidExpiration(month, year))
         {
             return new ValidationResult(ErrorMessage);
         }
@@ -34,7 +34,10 @@ public class FutureMonthAttribute : ValidationAttribute
         year = 0;
         var yearProperty = validationContext.ObjectType.GetProperty("ExpirationYear");
         var yearValue = yearProperty?.GetValue(validationContext.ObjectInstance);
-        return yearValue is int yearInt && yearInt >= DateTime.Now.Year % 2000;
+        var result = int.TryParse(yearValue as string, out var yearInt) && yearInt >= DateTime.Now.Year % 2000;
+        year = yearInt;
+        return result;
+
     }
 
     /// <summary>

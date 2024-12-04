@@ -32,7 +32,7 @@ public static class EmailSenderHelper
         using (var smtp = new SmtpClient())
         {
             smtp.Connect("smtp.ukr.net", 465, SecureSocketOptions.SslOnConnect);
-            smtp.Authenticate("baryaroman@ukr.net", "a94DSYBDuxMIT8l4");
+            smtp.Authenticate("baryaroman@ukr.net", "l9JsuDwPVtqMxFlK");
             smtp.Send(email);
             smtp.Disconnect(true);
         }
